@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as P from "./projects.styles";
 import data from "../../data/data";
 
@@ -11,7 +11,7 @@ function paginate(arr: PaginateProps) {
   const newArr: PaginateProps[] = [];
 
   while (copy.length > 0) {
-    let item = copy.splice(0, 4);
+    let item = copy.splice(0, 8);
     newArr.push(item);
   }
 
@@ -22,11 +22,26 @@ export default function Projects() {
   const [page, setPage] = useState(0);
   const list = paginate(data);
 
+  const handleScroll = () => {
+    const value = (document.querySelector("#projects") as HTMLElement)
+      .offsetTop;
+    window.scrollTo(0, value);
+  };
+
+  const handleClick = (x: number) => {
+    setPage(x);
+    handleScroll();
+  };
+
   const paginageButtons = [];
 
   for (let i = 0; i < list.length; i++) {
     paginageButtons.push(
-      <P.PaginateButton key={i} onClick={() => setPage(i)} active={page === i}>
+      <P.PaginateButton
+        key={i}
+        onClick={() => handleClick(i)}
+        active={page === i}
+      >
         {i + 1}
       </P.PaginateButton>
     );

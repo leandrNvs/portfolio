@@ -26,10 +26,13 @@ export const Title = styled.h2`
 export const Projects = styled.div`
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   gap: 1rem;
-  padding: 2rem;
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -46,7 +49,7 @@ export const CardImage = styled.img`
   width: 100%;
   height: 250px;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   filter: grayscale(90%);
 `;
 
