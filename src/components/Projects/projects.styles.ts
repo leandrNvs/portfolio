@@ -80,8 +80,8 @@ export const Paginate = styled.div`
 `;
 
 export const PaginateButton = styled.button<ButtonPageProps>`
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   background-color: ${({ active, theme }) =>
     active ? theme.colors.secondary : "#222"};
   color: ${({ active }) => (active ? "#000" : "#fff")};
