@@ -9,7 +9,8 @@ export default function Home() {
         Front-end
       </H.Title>
       <H.Text>
-        Estudante no desenvolvimento web. Atualmente, atuando com{" "}
+        Formando em <strong>Análise e Desenvolvimento de Sistemas</strong> e
+        estudante no desenvolvimento web. Atualmente, atuando com{" "}
         <strong>javascript</strong> utilizando a biblioteca{" "}
         <strong>ReactJs</strong>. Planejo retomar meus estudos sobre{" "}
         <strong>PHP</strong> e <strong>Mysql</strong>. Também possuo interesse
