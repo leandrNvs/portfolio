@@ -10,11 +10,10 @@ export default function Home() {
       </H.Title>
       <H.Text>
         Formado em <strong>Análise e Desenvolvimento de Sistemas</strong> e
-        estudante no desenvolvimento web. Atualmente, atuando com{" "}
+        estudante no desenvolvimento web. Atualmente, estou atuando com{" "}
         <strong>javascript</strong> utilizando a biblioteca{" "}
-        <strong>ReactJs</strong>. Planejo retomar meus estudos sobre{" "}
-        <strong>PHP</strong> e <strong>Mysql</strong>. Também possuo interesse
-        em <strong>Ruby.</strong>
+        <strong>ReactJs</strong> e estou aprendendo <strong>Node.js</strong> e{" "}
+        <strong>Ruby</strong>.
       </H.Text>
       <H.LinkGroup>
         <H.Link href="https://github.com/leandrNvs" target="_blank" primary>
