@@ -56,11 +56,6 @@ const skills = [
     color: "#7045B5",
   },
   {
-    title: "Material Ui",
-    icon: <SiMaterialui />,
-    color: "#007FFF",
-  },
-  {
     title: "Styled components",
     icon: <SiStyledcomponents />,
     color: "#C76494",
